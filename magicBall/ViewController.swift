@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-    let answers: [String] = ["Беспорно", "Предрешено", "Точно да", "Может быть", "Кажется - да", "Пока не ясно", "Не стоит", "Точно нет", "Сомнительно", "Лучше не стоит"]
+    let answers: [String] = ["Беcспорно", "Предрешено", "Точно да", "Может быть", "Кажется - да", "Пока не ясно", "Не стоит", "Точно нет", "Сомнительно", "Лучше не стоит"]
     
     let viewBall1: UIView = {
         let view = UIView()
