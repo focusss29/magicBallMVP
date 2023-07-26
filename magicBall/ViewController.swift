@@ -8,8 +8,13 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
-    let answers: [String] = ["Беcспорно", "Предрешено", "Точно да", "Может быть", "Кажется - да", "Пока не ясно", "Не стоит", "Точно нет", "Сомнительно", "Лучше не стоит", "Думаю не стоит", "Однозначно"]
+class ViewController: UIViewController, ViewPresenterDelegate {
+    var presenter: ViewPresenter?
+    
+    func displayPrediction(_ prediction: String) {
+        labelBall.text = prediction
+        labelBall.font = UIFont.systemFont(ofSize: 25)
+    }
     
     let viewBall1: UIView = {
         let view = UIView()
@@ -96,6 +101,8 @@ private extension ViewController {
         viewBall1.addSubview(myButton)
         view.addSubview(labelInfo)
         view.addSubview(buttonReset)
+        presenter = ViewPresenter()
+        presenter?.delegate = self
     }
     func makeContraints() {
         viewBall1.snp.makeConstraints {
@@ -133,9 +140,7 @@ private extension ViewController {
             self.viewBall1.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
             self.labelBall.alpha = 0.0
         }, completion: { _ in
-            let randomAnswer = self.answers.randomElement()
-            self.labelBall.text = randomAnswer
-            self.labelBall.font = UIFont.systemFont(ofSize: 25)
+            self.presenter?.generatePrediction()
             UIView.animate(withDuration: 0.7, animations: {
                 self.labelBall.alpha = 1.0
             })

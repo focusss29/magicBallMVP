@@ -17,6 +17,7 @@
 		771312C52A62E81600E777D9 /* magicBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771312C42A62E81600E777D9 /* magicBallUITests.swift */; };
 		771312C72A62E81600E777D9 /* magicBallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771312C62A62E81600E777D9 /* magicBallUITestsLaunchTests.swift */; };
 		771312D52A62E84700E777D9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 771312D42A62E84700E777D9 /* SnapKit */; };
+		77D122602A71673900C3C9C9 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D1225F2A71673900C3C9C9 /* ViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		771312C02A62E81600E777D9 /* magicBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		771312C42A62E81600E777D9 /* magicBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicBallUITests.swift; sourceTree = "<group>"; };
 		771312C62A62E81600E777D9 /* magicBallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicBallUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77D1225F2A71673900C3C9C9 /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				771312A02A62E81400E777D9 /* AppDelegate.swift */,
 				771312A22A62E81400E777D9 /* SceneDelegate.swift */,
 				771312A42A62E81400E777D9 /* ViewController.swift */,
+				77D1225F2A71673900C3C9C9 /* ViewPresenter.swift */,
 				771312AC2A62E81500E777D9 /* Assets.xcassets */,
 				771312AE2A62E81500E777D9 /* LaunchScreen.storyboard */,
 				771312B12A62E81500E777D9 /* Info.plist */,
@@ -269,6 +272,7 @@
 				771312A12A62E81400E777D9 /* AppDelegate.swift in Sources */,
 				771312AB2A62E81400E777D9 /* magicBall.xcdatamodeld in Sources */,
 				771312A32A62E81400E777D9 /* SceneDelegate.swift in Sources */,
+				77D122602A71673900C3C9C9 /* ViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FM5MC82G6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = magicBall/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -463,6 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FM5MC82G6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = magicBall/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
